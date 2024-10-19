@@ -1,0 +1,51 @@
+@mixin html {
+    font-family: "Afacad Flux", 'Courier New', Courier, monospace;
+    background-color: #eac3c3;
+
+}
+@mixin header {
+    display: flex;
+    background-color: #f1eaea;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    box-sizing: border-box;
+    border-radius: 2vw;
+}
+
+@mixin mainTitle {
+    margin: .7vw;
+}
+
+@mixin searcher {
+    display: flex;
+    padding: 1vw;
+    gap: 1vw;
+}
+
+@mixin listFilterTitle {
+    margin-left: 1vw;
+}
+
+@mixin listFilterList {
+    border-radius: 1vw;
+    width: calc(100% - 1vw);
+    background-color: #fdebeb;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 10px;
+    padding: 1vw;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+@mixin listFilterListItem {
+    padding: 1vw;
+    width: calc(100% - 1vw);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@mixin listFilterListItemCover {
+    width: 20vw;
+}

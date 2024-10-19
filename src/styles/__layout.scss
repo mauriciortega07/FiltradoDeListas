@@ -1,0 +1,35 @@
+html {
+@include html;
+    body {
+        .App {
+            header {
+                @include header;
+
+                .mainTitle {
+                    @include mainTitle;
+                }
+
+                .searcher {
+                    @include searcher;
+                }
+            }
+
+            main {
+                .listFilter {
+                    &__title {
+                        @include listFilterTitle;
+                    }
+
+                    &__list {
+                        @include listFilterList;
+
+                        &--item {
+                            @include listFilterListItem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

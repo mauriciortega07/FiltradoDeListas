@@ -1,0 +1,15 @@
+body {
+    .App {
+        main {
+            .listFilter {
+                &__list {
+                    &--item {
+                       .item__cover {
+                            @include listFilterListItemCover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
